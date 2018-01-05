@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luisfly.exercise3.MainActivity">
+
+    # gravity 文字对齐属性 center 中间对齐
+    # (layout_width and layout_height) controller size
+    # 3.2.1 textview
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#00ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    # 3.2.2 button
+    # "textAllCaps" control the word upper or lower change
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click me!"
+        android:textAllCaps="false"/>
+
+    # 3.2.3 EditText
+    # "hint" is the text in the EditText before you enter your word
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please write what you want"
+        app:layout_constraintBottom_toTopOf="@+id/text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_1"
+        app:layout_constraintVertical_bias="0.061"
+        app:layout_editor_absoluteX="0dp"
+        app:layout_editor_absoluteY="0dp" />
+
+    # 3.2.4 imageView
+    # "src" Attribute mark the source path
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saber" />
+
+    # 3.2.5 progressbar
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100" />
+
+</android.support.constraint.ConstraintLayout>
